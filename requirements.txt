@@ -1,0 +1,5 @@
+Flask
+python-dotenv
+google-genai
+requests #Only for testing
+pytz #Timezones
