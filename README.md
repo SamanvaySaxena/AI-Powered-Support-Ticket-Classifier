@@ -1,4 +1,4 @@
-# AI Support Ticket Classifier
+# AI Powered Support Ticket Classifier
 
 ## Overview
 
