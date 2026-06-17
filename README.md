@@ -8,34 +8,30 @@
 
 ## ❗ Problem It Solves
 
-#### Businesses that receive customer support requests through forms or emails often face challenges in managing and prioritizing incoming issues:
+#### Businesses that handle customer complaints through forms often struggle with efficiently processing and organizing incoming support requests:
 
-#### - Support requests come in unstructured and mixed formats
-#### - Important issues like billing problems or payment errors can get delayed
-#### - Manual sorting of tickets into categories takes time and effort
-#### - No clear system to decide which issues need immediate attention
-#### - Business owners often waste time reviewing low-priority requests first
-#### - Lack of structured tracking across different urgency levels
+#### - Customer complaints arrive in unstructured formats from forms or emails
+#### - Manual reading and categorization of tickets takes time and slows response
+#### - Important issues may not be identified quickly enough
+#### - Support teams lack a consistent system for prioritizing tickets
+#### - No automated workflow to summarize and route tickets to the right place
+#### - Data is often scattered across systems without structured tracking
 
-#### This leads to delayed responses, poor customer experience, and inefficient support handling.
+This leads to delayed responses, poor prioritization, and inefficient support handling.
 
 ## 💡 Solution
 
-#### This system automates the classification and prioritization of customer support tickets using AI and workflow automation.
+#### This system automates the end-to-end customer support ticket processing workflow using AI, backend APIs, and no-code automation tools.
 
-#### It processes incoming support requests from a Tally form, analyzes the customer's complaint, and then:
+#### It processes incoming customer complaints submitted through a Tally form and:
 
-#### - Classifies tickets into categories such as Billing, Technical, or Sales
-#### - Assigns a priority level based on urgency and issue severity
-#### - High priority: billing issues, payment errors, double charges, urgent complaints
-#### - Medium priority: general technical or service-related issues
-#### - Low priority: non-urgent queries or informational requests
-#### - Recommends a next action for the business owner:
-#### - High priority → "Do a call"
-#### - Medium priority → "Send an email"
-#### - Low priority → "Archive request"
-#### - Stores all processed tickets into separate spreadsheets based on priority level (High, Medium, Low)
+#### - Sends the complaint data to a Flask API for structured processing
+#### - Uses Google Gemini to analyze and classify the complaint into categories such as Billing, Technical, or Sales
+#### - Assigns a priority level based on urgency and severity (e.g., payment issues are marked high priority)
+#### - Generates a concise summary of the customer complaint for quick review
+#### - Automatically routes the ticket into the appropriate Google Sheets workflow using Make.com based on classification and priority
 
+#### This ensures faster response times, better ticket organization, and reduced manual effort for support teams.
 ## Screenshots
 
 ### Tally Form
