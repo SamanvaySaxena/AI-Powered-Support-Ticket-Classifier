@@ -6,6 +6,36 @@
 
 #### The system receives customer complaints from a Tally form, sends them to a Flask API for processing, uses Google Gemini to classify the complaint, assign a priority level, generate a summary, and automatically routes the ticket to the appropriate Google Sheets workflow through Make.com.
 
+## ❗ Problem It Solves
+
+#### Businesses that receive customer support requests through forms or emails often face challenges in managing and prioritizing incoming issues:
+
+#### - Support requests come in unstructured and mixed formats
+#### - Important issues like billing problems or payment errors can get delayed
+#### - Manual sorting of tickets into categories takes time and effort
+#### - No clear system to decide which issues need immediate attention
+#### - Business owners often waste time reviewing low-priority requests first
+#### - Lack of structured tracking across different urgency levels
+
+#### This leads to delayed responses, poor customer experience, and inefficient support handling.
+
+## 💡 Solution
+
+#### This system automates the classification and prioritization of customer support tickets using AI and workflow automation.
+
+#### It processes incoming support requests from a Tally form, analyzes the customer's complaint, and then:
+
+#### - Classifies tickets into categories such as Billing, Technical, or Sales
+#### - Assigns a priority level based on urgency and issue severity
+#### - High priority: billing issues, payment errors, double charges, urgent complaints
+#### - Medium priority: general technical or service-related issues
+#### - Low priority: non-urgent queries or informational requests
+#### - Recommends a next action for the business owner:
+#### - High priority → "Do a call"
+#### - Medium priority → "Send an email"
+#### - Low priority → "Archive request"
+#### - Stores all processed tickets into separate spreadsheets based on priority level (High, Medium, Low)
+
 ## Screenshots
 
 ### Tally Form
